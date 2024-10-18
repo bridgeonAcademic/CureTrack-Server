@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { EventEmitter } from "events";
@@ -18,7 +18,7 @@ app.use(
 app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: true, limit: "100mb" }));
 
-app.get("/api", (req, res) => {
+app.get("/api", (req: Request, res: Response) => {
   res.send("Hello World");
 });
 
