@@ -4,18 +4,13 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "express", "cors"],
-    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
-    "sourceMap": true // Enable source maps
+    "types": ["node", "express", "cors", "dotenv", "mongoose"]
   },
-  "include": ["src/**/*"] /* Specify files to include in the compilation. */,
-  "exclude": ["node_modules"] /* Specify files to exclude from the compilation. */
-
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
