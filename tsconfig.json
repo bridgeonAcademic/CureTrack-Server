@@ -16,7 +16,6 @@
     "sourceMap": true // Enable source maps
   },
   "include": ["src/**/*"] /* Specify files to include in the compilation. */,
-  "exclude": [
-    "node_modules"
-  ] /* Specify files to exclude from the compilation. */
+  "exclude": ["node_modules"] /* Specify files to exclude from the compilation. */
+
 }
