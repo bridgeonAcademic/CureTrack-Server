@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist",
+    "clean": "npx rimraf dist",
     "build": "npm run clean && tsc",
     "start": "node dist/server.js",
     "dev": "nodemon server.ts"
