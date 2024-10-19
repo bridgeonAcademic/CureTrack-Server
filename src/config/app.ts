@@ -19,7 +19,7 @@ app.use(express.json({ limit: "100mb" }));
 app.use(express.urlencoded({ extended: true, limit: "100mb" }));
 
 app.get("/api", (req: Request, res: Response) => {
-  res.send("Hello World");
+  res.send("Hello World!..");
 });
 
 export default app;
