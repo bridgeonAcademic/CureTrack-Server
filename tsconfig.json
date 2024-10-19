@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
-    "target": "es2016",                                /* Specify ECMAScript target version. */
-    "module": "commonjs",                              /* Specify module code generation. */
-    "strict": true,                                    /* Enable all strict type-checking options. */
-    "esModuleInterop": true,                           /* Enables emit interoperability between CommonJS and ES Modules. */
-    "forceConsistentCasingInFileNames": true,         /* Ensures that casing is correct in imports. */
-    "skipLibCheck": true,                              /* Skip type checking of declaration files. */
-    "outDir": "./dist",                                /* Redirect output structure to the `dist` folder. */
-    "rootDir": "./src",                                /* Specify the root folder of your source files. */
-    "moduleResolution": "node",                         /* Specify how TypeScript looks up a file from a given module specifier. */
-    "resolveJsonModule": true,                         /* Enable importing .json files. */
-    "typeRoots": ["./node_modules/@types"],            /* Specify multiple folders that act like './node_modules/@types'. */
-    "types": ["node", "express", "cors", "dotenv", "mongoose"] /* Include type packages for libraries used. */
-
-    /* Emit */
-    // "declaration": true,                              /* Generate declaration files. */
-    // "sourceMap": true,                                /* Create source maps for emitted JavaScript files. */
-    // "removeComments": true,                           /* Disable emitting comments. */
-    // "noEmitOnError": true,                            /* Disable emitting files if any type checking errors are reported. */
+    "target": "es2016",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "express", "cors"],
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "sourceMap": true // Enable source maps
   },
-  "include": ["src/**/*"],                             /* Specify files to include in the compilation. */
-  "exclude": ["node_modules"]                          /* Specify files to exclude from the compilation. */
+  "include": ["src/**/*"] /* Specify files to include in the compilation. */,
+  "exclude": ["node_modules"] /* Specify files to exclude from the compilation. */
+
 }

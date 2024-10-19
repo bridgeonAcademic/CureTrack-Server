@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import dotenv from "dotenv";
+import * as dotenv from 'dotenv';
 import { EventEmitter } from "events";
 
 dotenv.config();
