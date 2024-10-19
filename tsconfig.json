@@ -15,6 +15,8 @@
     "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
     "sourceMap": true // Enable source maps
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"] /* Specify files to include in the compilation. */,
+  "exclude": [
+    "node_modules"
+  ] /* Specify files to exclude from the compilation. */
 }
