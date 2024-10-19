@@ -108,6 +108,10 @@
     "skipLibCheck": true ,                                /* Skip type checking all .d.ts files. */
     "outDir": "./dist",
     "rootDir": "./src",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "express", "cors", "dotenv", "mongoose"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
