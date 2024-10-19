@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon server.ts",
-    "build": "tsc"
+    "dev": "nodemon server.ts"
   },
   "author": "curetrack",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.7.7",
     "nodemon": "^3.1.7",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
